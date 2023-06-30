@@ -23,7 +23,7 @@
             <div class="logo">
                 <div class="name">
                   <h2>Build The Job</h2>
-                  <img src="./imagenes/bolsadetrabajo.jpg" alt="logo de la compañia">
+                  <img src="./imagenes/bolsadetrabajo.png" alt="logo de la compañia">
                 </div>
             </div> 
         </div>

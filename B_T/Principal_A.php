@@ -23,27 +23,25 @@
             <div class="logo">
                 <div class="name">
                   <h2>Build The Job</h2>
-                  <img src="./imagenes/bolsadetrabajo.jpg" alt="logo de la compañia">
+                  <img src="./imagenes/bolsadetrabajo.png" alt="logo de la compañia">
                 </div>
             </div> 
         </div>
         <div class="capa"></div>
-  <!--	--------------->
-    <div class="text">
-      <h2> HOLA BIENVENIDO <?php echo $_SESSION['correo'] ?> </h2>
-      <p> kfihfiehfiehfiohfihdifhdifhdifhidfdfdfdfdfd </p><br>
-      <p>fepofjoepjfojfopjdopfjdo</p>
-    </div>
+ 
     <input type="checkbox" id="btn-menu">
     <div class="container-menu">
           <div class="cont-menu">
               <nav>
-                      <a href="#">Habilidad</a>
-                      <a href="#">Perfil</a>
+                      <a href="Principal_A.php">Inicio</a>
+                      <a href="perfilinicio.php">Perfil</a>
                       <a href="logout.php"> Cerrar sesion</a>
+
               </nav>
               <label for="btn-menu">✖️</label>
           </div>
     </div>      
+   
+
 </body>
 </html>

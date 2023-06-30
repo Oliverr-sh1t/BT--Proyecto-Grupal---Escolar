@@ -9,7 +9,7 @@
 <body>
 <header>
           <div class="encabezado">
-              <img src="bolsadetrabajo.jpg" alt="logo de la compañia">
+              <img src="bolsadetrabajo.png" alt="logo de la compañia">
               <h2 class="name-company">Build The Job</2>
           </div>
           <nav>

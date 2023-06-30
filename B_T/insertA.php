@@ -13,12 +13,7 @@ if(isset($_POST["registro"])){
         $correos= trim($_POST['correos']);
         $contraseñas= trim($_POST['contraseñas']);
         $consulta= "INSERT INTO alumno(Nombre, Apellido, DNI, Domicilio, Mail, Telefono, Fecha_nacimiento, contraseña) VALUES ('$nombres','$apellidos','$dni','$domicilios','$correos','$telefonos','$fechasdenacimiento','$contraseñas')";
-        $resultado= mysqli_query($con, $consulta);
-        if (isset($_POST['fechadenacimiento'])) {
-            $fecha = $_POST['fechadenacimiento'];
-      
-            $dateTime = DateTime::createFromFormat('Y-m-d', $fecha);
-        }        
+        $resultado= mysqli_query($con, $consulta);   
         if($resultado){
             ?>
             <h3 class= "ok"> Te registraste correctamente </h3>
