@@ -7,7 +7,7 @@
     <title>B_Trabajo</title>
 </head>
 <body>
-<header>
+  <header>
           <div class="encabezado">
               <img src="bolsadetrabajo.png" alt="logo de la compañia">
               <h2 class="name-company">Build The Job</2>
@@ -25,6 +25,14 @@
               }
             });
           }
+          document.addEventListener("DOMContentLoaded", () => {
+            const form = document.querySelector("form");
+            form.addEventListener("keydown", event => {
+              if (event.key === "Enter") {
+                event.preventDefault();
+              }
+            });
+          });
         </script>
         <form method="POST"> 
           <h4>Registro</h4>

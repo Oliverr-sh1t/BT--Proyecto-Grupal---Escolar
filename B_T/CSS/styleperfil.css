@@ -1,74 +1,90 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(11, 11, 29);
+  body {
+    background-color: rgb(11, 11, 29) ;
+    margin: 0;
   }
   
-  .container {
-    width: 300px;
-    height: 300px;
-    display: flex;
+  .container_table{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 50px 70px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin: auto;
+    margin-bottom: 5px;
+	  align-content: center;
+  }
+  form {
+    width: 400px;
+    height: 700px;
+    box-shadow: 0 0 10px rgba(5, 163, 225, 0.1);
+    padding: 30px;
+    margin: auto;
+    color: rgb(31, 26, 26);
+    background-color:rgb(106, 192, 221);
+    border-radius: 5px;
   }
   
   h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
   }
   
   label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #262121;
   }
   
   input[type="text"],
-  input[type="email"],
+  input[type="bigint"],
+  input[type="password"],
   input[type="file"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #0c0f2d;
+    border-radius: 6px;
     font-size: 14px;
     box-sizing: border-box;
+    margin-top: 8px; margin-bottom: 8px;
   }
   
   input[type="text"]:focus,
-  input[type="email"]:focus,
+  input[type="bigint"]:focus,
+  input[type="password"]:focus,
   input[type="file"]:focus {
     outline: none;
     border-color: #555;
+    margin-top: 8px; margin-bottom: 8px;
   }
-  
-  button[type="submit"] {
-    display: block;
+  .form-text{
     width: 100%;
+    padding: 10px;
+    border: 1px solid #0c0f2d;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 8px; margin-bottom: 8px;
+    background-color: white;
+  }
+  .form-12{
+    position: relative;
+    display: flex;
+  }
+  button[type="submit"],
+  [type="reset"] {
+    display: block;
+    width: 50%;
     padding: 20px;
     background-color: #333;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    margin-top: auto;
-    margin-right: 200px; /* Cambiado a 'auto' para centrar horizontalmente */
+    margin-top: 8px;
+    margin-right: 10px; /* Cambiado a 'auto' para centrar horizontalmente */
+
   }
   
-  button[type="submit"]:hover {
+  button[type="submit"]:hover,
+  [type="reset"]:hover{
     background-color: #555;
   }
-  

@@ -100,7 +100,7 @@
 		max-width: 250px;
 		background: #1c1c1c;
 		height: 100vh;
-		position: absolute;
+		position: fixed;
 		transition: all 500ms ease;
 		transform: translateX(-100%);
 	}
@@ -137,52 +137,10 @@
 		z-index: 999;
 	}
 	/*Fin de Menù lateral*/
-	.text{
-		display: flexbox;
-		position: absolute;
-		height: 300px;
-		margin-top: 120px;
+    .container{
+        display: flexbox;
+        margin-top: 120px;
+        position: absolute;
 		margin-left: 20px;
-		}
-	.user-img{
-		width: 200px;
-		height: 150px;
-		text-align: center;
-		margin: auto;
-		border: 1px solid #0c0f2d;
-	}
-	img{
-		width: 200px;
-		height: 150px;
-		align-content: center;
-		position: relative;
-	} 
-	.card {
-		height: 250px;
-		width: 100%;
-		background: white;
-		padding: 12px;
-		border-radius: 10px;
-		text-align: center;
-		margin-top: 110px;
-		position: absolute;
-		border-color: #0c0f2d;
-		border-style: solid;
-		border-top: #fff;
-		border-left: #fff;
-		border-right: #fff;
-	}
-	.option{
-		width: auto;
-		margin-left: 30px;
-		margin-right: auto;
-		position: absolute;
-		margin-top: 20%;
-		}
-
-	#div1, #div2, #div3 {
-		margin-top: 50px;
-		color: #1c1c1c;
-		position: relative;
-	}
-	
+        height: 300px;
+    }

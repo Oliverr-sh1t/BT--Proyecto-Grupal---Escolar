@@ -17,7 +17,7 @@ $filas_alumno = mysqli_num_rows($result_alumno);
 if($filas_empresa) {
     header("Location:../principal_E.php");
 } elseif($filas_alumno) {
-    header("Location:../principal_A.php");
+    header("Location:../Principal_A.php");
 } else {
     include("login.php");
     ?>

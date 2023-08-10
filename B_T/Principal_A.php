@@ -28,20 +28,20 @@
             </div> 
         </div>
         <div class="capa"></div>
- 
+    <div class="text">
+    <h2> HOLA BIENVENIDO <?php echo $_SESSION['correo'] ?> </h2>
+    </div>
     <input type="checkbox" id="btn-menu">
     <div class="container-menu">
           <div class="cont-menu">
               <nav>
                       <a href="Principal_A.php">Inicio</a>
-                      <a href="perfilinicio.php">Perfil</a>
+                      <a href="perfilinicioA.php">Perfil</a>
                       <a href="logout.php"> Cerrar sesion</a>
 
               </nav>
               <label for="btn-menu">✖️</label>
           </div>
     </div>      
-   
-
 </body>
 </html>

@@ -24,7 +24,14 @@
               }
             });
           }
-
+          document.addEventListener("DOMContentLoaded", () => {
+            const form = document.querySelector("form");
+            form.addEventListener("keydown", event => {
+              if (event.key === "Enter") {
+                event.preventDefault();
+              }
+            });
+          });
         </script>
         <form method="POST">
             <h4>Registro</h4>
@@ -32,8 +39,8 @@
             <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido"onkeypress="nextFocus('apellidos', 'dni')">
             <input class="controls" type="number" name="dni" id="dni" placeholder="Ingrese su DNI"onkeypress="nextFocus('dni', 'domicilios')">
             <input class="controls" type="address" name="domicilios" id="domicilios" placeholder="Ingrese su domicilio" onkeypress="nextFocus('domicilios', 'telefonos')">
-            <input class="controls" type="number" name="telefonos" id="telefonos" placeholder="Ingrese su numero de telefono" onkeypress="nextFocus('telefonos', 'fechas de nacimiento')">
-            <input class="controls" type="date" name="fechasdenacimiento" id="fechasdenacimiento" placeholder="Ingrese su fecha de nacimiento"onkeypress="nextFocus('fechas de nacimiento', 'correos')">
+            <input class="controls" type="number" name="telefonos" id="telefonos" placeholder="Ingrese su numero de telefono" onkeypress="nextFocus('telefonos', 'fechasdenacimiento')">
+            <input class="controls" type="date" name="fechasdenacimiento" id="fechasdenacimiento" placeholder="Ingrese su fecha de nacimiento"onkeypress="nextFocus('fechasdenacimiento', 'correos')">
             <input class="controls" type="email" name="correos" id="correos" placeholder="Ingrese su correo"onkeypress="nextFocus('correos', 'contraseñas')">
             <input class="controls" type="password" name="contraseñas" id="contraseñas" placeholder="Ingrese su contrase&ntilde;a">
                <div class="terms">

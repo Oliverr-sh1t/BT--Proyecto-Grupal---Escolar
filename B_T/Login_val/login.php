@@ -29,6 +29,14 @@
             }
           });
         }
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.querySelector("form");
+            form.addEventListener("keydown", event => {
+              if (event.key === "Enter") {
+                event.preventDefault();
+              }
+            });
+          });
         </script>
     <form action="validar.php" class="sesion" method= "POST">
         <h4> Iniciar sesion</h4>

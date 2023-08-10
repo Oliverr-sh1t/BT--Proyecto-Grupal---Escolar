@@ -9,7 +9,7 @@ if(isset($_POST["registro"])){
         $dni= trim($_POST['dni']);
         $domicilios= trim($_POST['domicilios']);
         $telefonos= trim($_POST['telefonos']);
-        $fechasdenacimiento= date("Y-m-d");
+        $fechasdenacimiento= trim($_POST['fechasdenacimiento']);
         $correos= trim($_POST['correos']);
         $contraseñas= trim($_POST['contraseñas']);
         $consulta= "INSERT INTO alumno(Nombre, Apellido, DNI, Domicilio, Mail, Telefono, Fecha_nacimiento, contraseña) VALUES ('$nombres','$apellidos','$dni','$domicilios','$correos','$telefonos','$fechasdenacimiento','$contraseñas')";
