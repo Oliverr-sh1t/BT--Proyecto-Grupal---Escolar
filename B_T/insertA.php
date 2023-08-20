@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include("cn.php");
 
 if(isset($_POST["registro"])){
@@ -16,18 +16,15 @@ if(isset($_POST["registro"])){
         $resultado= mysqli_query($con, $consulta);   
         if($resultado){
             ?>
-            <h3 class= "ok"> Te registraste correctamente :P  </h3>
+            <h3 class= "ok"> Te registraste correctamente </h3>
             <?php
-             $_SESSION['correo'] = $correos; 
-             header("Location: Principal_A.php"); 
-             exit; 
         } else{
             ?>
             <h3 class= "bad"> Ocurrio un error </h3>
             <?php
         }
 
-   } else{
+   }  else{
     ?>
     <h3 class= "bad"> Por favor complete los campos </h3>
     <?php
